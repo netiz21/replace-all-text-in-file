@@ -1,14 +1,17 @@
 "use strict";
 
+/**
+ * json 파일을 읽어서 value 값과 동일한 부분을 소스 전체에서 변경한다.
+ */
+
 const _ = require("lodash");
 const replace = require("replace-in-file");
 const fs = require("fs");
 
 /**
- * json 파일을 읽어서 value 값과 동일한 부분을 소스 전체에서 변경한다.
+ * rootPath 사용자마다 수정 필요
  */
 
-//C:\\projects\\SOC\\secudium-frontend\\src\\lngProvider\\locales\\ko_KR.json
 let rootPath = "C:\\projects\\SOC\\secudium-frontend";
 let jsonPath = rootPath + "\\src\\lngProvider\\locales\\ko_KR.json";
 
