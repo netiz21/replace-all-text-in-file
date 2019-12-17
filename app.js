@@ -12,7 +12,7 @@ const fs = require("fs");
  * rootPath 사용자마다 수정 필요
  */
 
-let rootPath = "C:\\projects\\SOC\\secudium-frontend";
+let rootPath = "C:\\projects\\secudium-frontend";
 let jsonPath = rootPath + "\\src\\lngProvider\\locales\\ko_KR.json";
 
 let jsonP;
@@ -29,7 +29,7 @@ fs.readFile(jsonPath, "utf8", function(err, data) {
 
     const regex = new RegExp(value, "g");
     const options = {
-      files: [rootPath + "\\src\\components\\RuleDist\\RuleDistHistList.js"],
+      files: [rootPath + "\\src\\components\\Rule\\RuleHistory.js"],
       from: regex,
       to: '<IntlMessages id="' + key + '" />'
     };
